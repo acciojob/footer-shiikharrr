@@ -1,1 +1,171 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  color: white;
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 20px 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.logo_name {
+  font-size: 38px;
+  color: white;
+}
+
+.media-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.media-icons a {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.media-icons a:nth-child(1) {
+  background: #4267b2;
+}
+
+.media-icons a:nth-child(2) {
+  background: #1da1f2;
+}
+
+.media-icons a:nth-child(3) {
+  background: #e1306c;
+}
+
+.media-icons a:nth-child(4) {
+  background: #0077b5;
+}
+
+.media-icons a:nth-child(5) {
+  background: #ff0000;
+}
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  min-width: 180px;
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.box h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 35px;
+  background: white;
+}
+
+.box ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.box ul li {
+  margin: 10px 0;
+}
+
+.box ul li a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.box ul li a:hover {
+  text-decoration: underline;
+}
+
+.bottom-details {
+  width: 100%;
+  background: #2c2f3a;
+  padding: 15px 40px;
+}
+
+.bottom-text {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #d9d9d9;
+  font-size: 18px;
+}
+
+.bottom-text a {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .link-boxes {
+    gap: 20px;
+  }
+
+  .box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .bottom-text {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
